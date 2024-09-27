@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/screens/sections/home_appbar.dart';
-import 'package:plant_app/screens/sections/home_header.dart';
-import 'package:plant_app/screens/sections/home_recommended.dart';
+import 'package:plant_app/module/home/screens/sections/home_appbar.dart';
+import 'package:plant_app/module/home/screens/sections/home_header.dart';
+import 'package:plant_app/module/home/screens/sections/home_recommended.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

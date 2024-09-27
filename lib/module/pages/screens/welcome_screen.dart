@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../const/colors.dart';
-import 'home_screen.dart';
+import 'package:plant_app/module/pages/navbar.dart';
+import '../../../const/colors.dart';
 
 class WelcomeScreen extends StatelessWidget {
+  static const nameRoute = '/';
   const WelcomeScreen({super.key});
 
   @override
@@ -38,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => const HomeScreen(),
+                  builder: (context) => const Navbar(),
                 ),
               );
             },
