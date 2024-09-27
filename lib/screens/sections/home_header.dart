@@ -54,23 +54,22 @@ class _HomeHeaderState extends State<HomeHeader> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Column(
+                    Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "30% OFF",
-                          style: TextStyle(
+                          style: bold.copyWith(
                             fontSize: 30,
-                            fontWeight: FontWeight.bold,
                             color: black,
                           ),
                         ),
                         Text(
                           "26 - 24 September",
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black54),
+                          style: medium.copyWith(
+                            fontSize: 20,
+                            color: Colors.black54,
+                          ),
                         ),
                       ],
                     ),
