@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/screens/components/home_card.dart';
+import 'package:plant_app/module/home/screens/components/home_card.dart';
 
-import '../../const/text.dart';
+import '../../../../const/text.dart';
 
 class HomeRecommended extends StatelessWidget {
   const HomeRecommended({super.key});
@@ -18,7 +18,7 @@ class HomeRecommended extends StatelessWidget {
             style: medium.copyWith(fontSize: 22),
           ),
         ),
-        const SizedBox(height: 30),
+        const SizedBox(height: 10),
         const Padding(
           padding: EdgeInsets.only(left: 15),
           child: SizedBox(

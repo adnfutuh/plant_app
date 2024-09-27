@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plant_app/const/colors.dart';
 import 'package:plant_app/const/text.dart';
 
-import '../../const/size.dart';
+import '../../../../const/size.dart';
 
 class HomeHeader extends StatefulWidget {
   const HomeHeader({super.key});
@@ -82,7 +82,7 @@ class _HomeHeaderState extends State<HomeHeader> {
             ],
           ),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 10),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
@@ -108,7 +108,7 @@ class _HomeHeaderState extends State<HomeHeader> {
                         _categories[index],
                         style: medium.copyWith(
                           fontSize: 12,
-                          color: _categories == index ? white : grey2,
+                          color: _isSelected == index ? black : Colors.grey,
                         ),
                         textAlign: TextAlign.center,
                       ),
