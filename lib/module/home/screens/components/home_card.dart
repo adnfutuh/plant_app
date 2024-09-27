@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:plant_app/const/colors.dart';
 import 'package:plant_app/const/size.dart';
 import 'package:plant_app/const/text.dart';
-import 'package:plant_app/screens/components/favorite_button.dart';
+import 'package:plant_app/module/home/screens/components/favorite_button.dart';
+
+import '../../../detail/detail_screen.dart';
 
 class HomeCard extends StatelessWidget {
   const HomeCard({
@@ -40,8 +42,17 @@ class HomeCard extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(15),
-                          child: Image.asset(
-                            'assets/images/Plant${index + 1}.png',
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => const DetailScreen(),
+                                ),
+                              );
+                            },
+                            child: Image.asset(
+                              'assets/images/Plant${index + 1}.png',
+                            ),
                           ),
                         ),
                         Padding(
