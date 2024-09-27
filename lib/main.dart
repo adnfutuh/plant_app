@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 import "package:plant_app/const/themes.dart";
-import "screens/welcome_screen.dart";
+import "module/pages/screens/welcome_screen.dart";
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
